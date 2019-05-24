@@ -2,12 +2,26 @@ $(document).ready(function(){
     $("#connectSubmit").on("click", function(){
         submitConnexion();
     });
-
     $("#regSubmit").on("click", function(){
         submitRegister();
     });
-
     fillRegisterForm();
+
+    // modals
+    var modalConn = document.getElementById("modalConn");
+    var openConn = document.getElementById("openConn");
+    var closeConn = document.getElementsByClassName("closeConn")[0];
+    var modalInsc = document.getElementById("modalInsc");
+    var openInsc = document.getElementById("openInsc");
+    var closeInsc = document.getElementsByClassName("closeInsc")[0];
+    openConn.onclick = function() { modalConn.style.display = "block"; }
+    closeConn.onclick = function() { modalConn.style.display = "none"; }
+    openInsc.onclick = function() { modalInsc.style.display = "block"; }
+    closeInsc.onclick = function() { modalInsc.style.display = "none"; }
+    window.onclick = function(event) {
+        if (event.target == modalConn) { modalConn.style.display = "none"; }
+        if (event.target == modalInsc) { modalInsc.style.display = "none"; }
+    }
 });
 
 function fillRegisterForm(){
