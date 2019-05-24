@@ -1,0 +1,8 @@
+name: "devweb"
+description: "2eme epreuve des 24h des iut info"
+topics: []
+homepage: ""
+source:
+  provider: gitlab
+  namespace: "plsql"
+  path: "plsql/devweb"
