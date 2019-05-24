@@ -19,9 +19,9 @@
       <label for="Type">Type d'utilisateur</label>
       <select name="Type" required></select>
       <input type="text" name="adresse" placeholder="Adresse" required/>
-      <input type="text" name="CodePostal" placeholder="Code postal" maxlength="12" />
+      <input type="text" name="CodePostal" placeholder="Code postal" maxlength="12" required/>
       <input type="text" name="Ville" placeholder="Ville" />
-      <select name="Pays"></select>
+      <select name="Pays" required></select>
       <input type="tel" name="N°Telephone" placeholder="Téléphone" maxlength="10" required/>
       <input type="password" name="mdp" placeholder="Mot de passe" required />
       <input type="password" name="mdpconf" placeholder="Confirmer mot de passe" required />
