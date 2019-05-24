@@ -23,7 +23,7 @@
       <input type="text" class="adress_sec_field" name="CodePostal" placeholder="Code postal" maxlength="12" required/>
       <input type="text" class="adress_sec_field" name="Ville" placeholder="Ville" />
       <select name="Pays" class="adress_sec_field" required></select>
-      <input type="tel" name="N°Telephone" placeholder="Téléphone" maxlength="10" required/>
+      <input type="number" name="telephone" placeholder="Téléphone" maxlength="10" required/>
       <input type="password" name="mdp" placeholder="Mot de passe" required />
       <input type="password" name="mdpconf" placeholder="Confirmer mot de passe" required />
       <div id="regMessage"></div>
