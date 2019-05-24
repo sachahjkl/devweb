@@ -1,8 +1,8 @@
 <html>
-    <head>
-        <title></title>
-    </head>
+    <?php include "layouts/head.php" ?>
     <body>
+        <?php include "layouts/header.php" ?>
         <h1>Site Web 24h</h1>
+        <?php include "layouts/footer.php" ?>
     </body>
 </html>
