@@ -14,9 +14,12 @@
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         session_start();
         $_SESSION['IdConnexion'] = $login;
-        $_SESSION['nomEntreprise'] = $row['nomEntreprise'];
+        $_SESSION['nomEntreprise'] = $row['nomentreprise'];
         $_SESSION['adresse'] = $row['adresse'];
-        $_SESSION['NTelephone'] = $row['NTelephone'];
+        $_SESSION['telephone'] = $row['telephone'];
+        $_SESSION['codepostal'] = $row['codepostale'];
+        $_SESSION['ville'] = $row['ville'];
+        $_SESSION['type'] = $row['type'];
     } else {
         $array_result['status']['code'] = 401;
         $array_result['status']['message'] = "Identifiant ou mot de passe incorrect";
