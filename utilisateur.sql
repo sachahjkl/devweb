@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 24 mai 2019 à 12:41
+-- Généré le :  ven. 24 mai 2019 à 12:58
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -36,6 +36,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `mdp` text NOT NULL,
   `nomEntreprise` text NOT NULL,
   `adresse` text NOT NULL,
+  `CodePostal` varchar(12) NOT NULL,
+  `Ville` text NOT NULL,
+  `Pays` int(1) NOT NULL,
   `NTelephone` int(10) NOT NULL,
   PRIMARY KEY (`IdUtilisateur`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;

@@ -2,7 +2,7 @@
     $host = "localhost";
     $username = "user1";
     $passwd = "user1";
-    $dbname = "plsql";
+    $dbname = "pl-sql";
 
     $connection = mysqli_connect($host, $username, $passwd, $dbname);
 
