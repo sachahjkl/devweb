@@ -11,7 +11,7 @@
         $array_result['status']['message'] = "Connecté en tant que '$login'";
 
         // session
-        $row = mysqli_fetch_array($result, MYSQLI_FETCH_ASSOC);
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         session_start();
         $_SESSION['IdConnexion'] = $login;
         $_SESSION['nomEntreprise'] = $row['nomEntreprise'];

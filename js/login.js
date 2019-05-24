@@ -15,7 +15,17 @@ function fillRegisterForm(){
         url: '/phpscripts/getregdata.php',
         success: function(output){
             var json_result = $.parseJSON(output);
-            
+            var typeAppend = "", paysAppend = "";
+            $.each(json_result.pays, function(key, value){
+                paysAppend += "<option value='" + value.id + "'>"
+                    + value.name + "</option>";
+            });
+            $("#registerForm [name='Pays']").html(paysAppend);
+            $.each(json_result.typeuser, function(key, value){
+                typeAppend += "<option value='" + value.id + "'>"
+                    + value.name + "</option>";
+            });
+            $("#registerForm [name='Type']").html(typeAppend);
         }
     });
 }
