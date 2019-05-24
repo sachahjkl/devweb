@@ -21,7 +21,7 @@
     } else {
         // Registering user
         $sqlAdd = "INSERT INTO utilisateur(Type, IdConnexion, mdp, nomEntreprise, adresse, codepostale, ville, pays, telephone)
-            VALUES('$company_type', '$login', 'md5($password)', '$company_name', '$adress', '$codepost', '$city', '$country', '$phone')";
+            VALUES('$company_type', '$login', MD5('$password'), '$company_name', '$adress', '$codepost', '$city', '$country', '$phone')";
 
         if(mysqli_query($connection, $sqlAdd)){
             $array_result['status']['code'] = 201;
