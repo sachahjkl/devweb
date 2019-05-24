@@ -1,0 +1,19 @@
+#connectionForm, #registerForm{
+    width: 50%;
+    margin: auto;
+}
+#connectionForm input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#registerForm input, #registerForm select{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#registerForm .adress_sec_field{
+    width: 32.4%;
+}

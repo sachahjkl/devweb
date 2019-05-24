@@ -91,6 +91,14 @@ footer {
   border: 1px solid #888;
   width: 80%;
   /* Could be more or less, depending on screen size */
+  padding: 20px;
+  border: 1px solid #888;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
 }
 
 /* The Close Button */
