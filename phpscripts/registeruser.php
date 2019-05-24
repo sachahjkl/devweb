@@ -20,8 +20,8 @@
         $array_result['status']['message'] = "Un utilisateur est déjà enregistré avec cet identifiant";
     } else {
         // Registering user
-        $sqlAdd = "INSERT INTO utilisateur(Type, IdConnexion, mdp, nomEntreprise, adresse, CodePostal, Ville, Pays, NTelephone)
-            VALUES('$company_type', '$login', '$password', '$company_name', '$adress', '$codepost', '$city', '$country', '$phone')";
+        $sqlAdd = "INSERT INTO utilisateur(Type, IdConnexion, mdp, nomEntreprise, adresse, codepostale, ville, pays, telephone)
+            VALUES('$company_type', '$login', 'md5($password)', '$company_name', '$adress', '$codepost', '$city', '$country', '$phone')";
 
         if(mysqli_query($connection, $sqlAdd)){
             $array_result['status']['code'] = 201;
@@ -33,6 +33,8 @@
     }
 
     $json_result = json_encode($array_result);
+
+    echo mysqli_error($connection);
 
     echo $json_result;
 
