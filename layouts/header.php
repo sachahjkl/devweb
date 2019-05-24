@@ -17,6 +17,6 @@
             <li>
                 <a href="?url=export"></a>
             </li>
-        <? } ?>
+        <?php } ?>
     </ul>
 </nav>
