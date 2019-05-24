@@ -6,7 +6,19 @@ $(document).ready(function(){
     $("#regSubmit").on("click", function(){
         submitRegister();
     });
+
+    fillRegisterForm();
 });
+
+function fillRegisterForm(){
+    $.ajax({
+        url: '/phpscripts/getregdata.php',
+        success: function(output){
+            var json_result = $.parseJSON(output);
+            
+        }
+    });
+}
 
 function submitConnexion(){
     $.ajax({
