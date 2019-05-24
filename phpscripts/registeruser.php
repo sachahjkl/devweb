@@ -9,7 +9,7 @@
     $codepost = $_POST['CodePostal'];
     $city = $_POST['Ville'];
     $country = $_POST['Pays'];
-    $phone = $_POST['NTelephone'];
+    $phone = $_POST['telephone'];
 
     $sql = "SELECT IdConnexion FROM utilisateur WHERE IdConnexion = '$login'";
     $result = mysqli_query($connection, $sql);
