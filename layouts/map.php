@@ -2,11 +2,12 @@
         <div id="preview">
         </div>
         <div id="menu">
-                <div class="card" id="info-pays">
+                <div class="card" id="infos-pays">
+                <ul>
+                </ul>
                 </div>
                 <div class="card" id="select-pays">
                 <ul>
-                 
                 </ul>
                 </div>
         </div>
