@@ -1,9 +1,11 @@
 $(document).ready(function(){
-    $("#connectSubmit").on("click", function(){
+    $("#connectionForm").on("submit", function(){
         submitConnexion();
+        return false;
     });
-    $("#regSubmit").on("click", function(){
+    $("#registerForm").on("submit", function(){
         submitRegister();
+        return false;
     });
     fillRegisterForm();
 
