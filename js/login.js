@@ -52,7 +52,7 @@ function submitConnexion(){
         success: function(output){
             var json_result = $.parseJSON(output);
             if(json_result.status.code == 200){
-                console.log(json_result.status.message);
+                window.location.href = "/";
             } else if(json_result.status.code == 401){
                 $("#connMessage").text(json_result.status.message);
             }
@@ -70,7 +70,8 @@ function submitRegister(){
             if(json_result.status.code == 409){
                 $("#regMessage").text(json_result.status.message);
             } else if(json_result.status.code == 201){
-                console.log(json_result.status.message);
+                $("#regMessage").text(json_result.status.message);
+                $("#registerForm input").text("");
             }
         }
     });
