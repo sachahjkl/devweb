@@ -1,7 +1,7 @@
 <header>
     <link rel="stylesheet" href="style/menu.css" />
     <div id="titre">
-        KEFA.
+        <img src="img/LOGO.png" alt="logo" height=100>
     </div>
     <div id="auth_buttons">
         <a id="openConn" href="#connexion">Connexion</a>
